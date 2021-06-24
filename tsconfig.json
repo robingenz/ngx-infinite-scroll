@@ -2,6 +2,12 @@
 {
   "compileOnSave": false,
   "compilerOptions": {
+    "paths": {
+      "@robingenz/ngx-infinite-scroll": [
+        "dist/robingenz/ngx-infinite-scroll/robingenz-ngx-infinite-scroll",
+        "dist/robingenz/ngx-infinite-scroll"
+      ]
+    },
     "baseUrl": "./",
     "outDir": "./dist/out-tsc",
     "forceConsistentCasingInFileNames": true,

@@ -3,5 +3,37 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-  }
+    "@robingenz/ngx-infinite-scroll": {
+      "projectType": "library",
+      "root": "projects/robingenz/ngx-infinite-scroll",
+      "sourceRoot": "projects/robingenz/ngx-infinite-scroll/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:ng-packagr",
+          "options": {
+            "project": "projects/robingenz/ngx-infinite-scroll/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/robingenz/ngx-infinite-scroll/tsconfig.lib.prod.json"
+            },
+            "development": {
+              "tsConfig": "projects/robingenz/ngx-infinite-scroll/tsconfig.lib.json"
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/robingenz/ngx-infinite-scroll/src/test.ts",
+            "tsConfig": "projects/robingenz/ngx-infinite-scroll/tsconfig.spec.json",
+            "karmaConfig": "projects/robingenz/ngx-infinite-scroll/karma.conf.js"
+          }
+        }
+      }
+    }
+  },
+  "defaultProject": "@robingenz/ngx-infinite-scroll"
 }
