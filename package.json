@@ -4,13 +4,15 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "npm run clean && ng build",
-    "watch": "ng build --watch --configuration development",
+    "build": "ng build",
+    "build:lib": "npm run clean && ng build @robingenz/ngx-infinite-scroll && cp -r README.md dist/robingenz/ngx-infinite-scroll",
     "test": "ng test",
+    "test:lib": "ng test @robingenz/ngx-infinite-scroll",
+    "watch": "ng build --watch --configuration development",
     "prettier": "prettier \"**/*.{css,html,ts,js,java}\"",
     "clean": "rimraf ./dist",
     "prepublishOnly": "npm run build",
-    "release": "standard-version"
+    "release:lib": "cd projects/robingenz/ngx-infinite-scroll && standard-version --infile ../../../CHANGELOG.md"
   },
   "private": true,
   "dependencies": {
@@ -45,5 +47,9 @@
     "standard-version": "^9.3.0",
     "typescript": "~4.2.3"
   },
-  "prettier": "@robingenz/prettier-config"
+  "prettier": "@robingenz/prettier-config",
+  "standard-version": {
+    "packageFiles": "projects/robingenz/ngx-infinite-scroll/package.json",
+    "bumpFiles": ["projects/robingenz/ngx-infinite-scroll/package.json"]
+}
 }
