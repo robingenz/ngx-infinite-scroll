@@ -25,8 +25,8 @@ A working example can be found [here](https://stackblitz.com/github/robingenz/ng
 
 ## Changelog
 
-See [CHANGELOG.md](https://github.com/robingenz/ngx-infinite-scroll/blob/master/CHANGELOG.md).
+See [CHANGELOG.md](https://github.com/robingenz/ngx-infinite-scroll/blob/main/CHANGELOG.md).
 
 ## License
 
-See [LICENSE](https://github.com/robingenz/ngx-infinite-scroll/blob/master/LICENSE).
+See [LICENSE](https://github.com/robingenz/ngx-infinite-scroll/blob/main/LICENSE).
