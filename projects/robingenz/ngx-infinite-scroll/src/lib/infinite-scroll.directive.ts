@@ -1,14 +1,10 @@
-import { Directive, EventEmitter, HostListener, Input,  Output } from '@angular/core';
+import { Directive, EventEmitter, HostListener, Input, Output } from '@angular/core';
 
 const scrollEventName = 'scroll';
-const scrollEventArgs = [
-  '$event.target.scrollTop',
-  '$event.target.scrollHeight',
-  '$event.target.offsetHeight',
-];
+const scrollEventArgs = ['$event.target.scrollTop', '$event.target.scrollHeight', '$event.target.offsetHeight'];
 
 @Directive({
-  selector: '[infiniteScroll]'
+  selector: '[infiniteScroll]',
 })
 export class InfiniteScrollDirective {
   /**
@@ -40,16 +36,12 @@ export class InfiniteScrollDirective {
   private didFire = false;
 
   @HostListener(scrollEventName, scrollEventArgs)
-  public onScroll(
-    scrollTop: number,
-    scrollHeight: number,
-    offsetHeight: number,
-  ): void {
+  public onScroll(scrollTop: number, scrollHeight: number, offsetHeight: number): void {
     if (this.infiniteScrollDisabled) {
       return;
     }
     const scrollPos = offsetHeight + scrollTop;
-    const threshold = this.thrPx || (offsetHeight * this.thrPc);
+    const threshold = this.thrPx || offsetHeight * this.thrPc;
     if (scrollPos + threshold >= scrollHeight) {
       if (!this.didFire) {
         this.didFire = true;

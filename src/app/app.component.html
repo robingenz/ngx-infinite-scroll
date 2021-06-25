@@ -1,7 +1,17 @@
 <html>
-  <head>{{ title }}</head>
+  <head>
+    {{
+      title
+    }}
+  </head>
   <body>
-    <div class="wrapper" infiniteScroll infiniteScrollThreshold="90%" [infiniteScrollDisabled]="false" (onInfiniteScroll)="loadMore()">
+    <div
+      class="wrapper"
+      infiniteScroll
+      infiniteScrollThreshold="90%"
+      [infiniteScrollDisabled]="false"
+      (onInfiniteScroll)="loadMore()"
+    >
       <div class="item" *ngFor="let item of items">{{ item }}</div>
     </div>
   </body>

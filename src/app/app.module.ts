@@ -5,14 +5,9 @@ import { InfiniteScrollModule } from '@robingenz/ngx-infinite-scroll';
 import { AppComponent } from './app.component';
 
 @NgModule({
-  declarations: [
-    AppComponent
-  ],
-  imports: [
-    BrowserModule,
-    InfiniteScrollModule
-  ],
+  declarations: [AppComponent],
+  imports: [BrowserModule, InfiniteScrollModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
