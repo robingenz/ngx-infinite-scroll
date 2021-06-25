@@ -10,7 +10,14 @@ npm install @robingenz/ngx-infinite-scroll
 
 ## Usage
 
-🚧 WIP
+```html
+<div infiniteScroll 
+     infiniteScrollThreshold="150px" 
+     [infiniteScrollDisabled]="false" 
+     (onInfiniteScroll)="loadMoreItems()">
+  <div *ngFor="let item of items">{{ item }}</div>
+</div>
+```
 
 ## Example
 
