@@ -8,6 +8,17 @@
 npm install @robingenz/ngx-infinite-scroll
 ```
 
+Import the `InfiniteScrollModule`:
+
+```ts
+import { InfiniteScrollModule } from '@robingenz/ngx-infinite-scroll';
+
+@NgModule({
+  imports: [InfiniteScrollModule],
+})
+export class AppModule {}
+```
+
 ## Usage
 
 ```html
