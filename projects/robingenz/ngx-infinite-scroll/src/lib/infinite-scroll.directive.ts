@@ -14,6 +14,8 @@ export class InfiniteScrollDirective {
   /**
    * The threshold distance from the bottom of the element to call the `onInfiniteScroll` output event when scrolled.
    * The value can be either a percent, or in pixels.
+   *
+   * Default: `200px`
    */
   @Input() public set infiniteScrollThreshold(value: string) {
     if (value.includes('%')) {

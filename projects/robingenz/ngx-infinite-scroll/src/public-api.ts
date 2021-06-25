@@ -1,5 +1,5 @@
 /*
- * Public API Surface of ngx-infinite-scroll
+ * Public API Surface of @robingenz/ngx-infinite-scroll
  */
 
 export * from './lib/infinite-scroll.directive';
