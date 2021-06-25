@@ -46,7 +46,17 @@ export class InfiniteScrollDirective {
     if (this.infiniteScrollDisabled) {
       return;
     }
-    const scrollPos = scrollHeight + scrollTop;
+    const scrollPos = offsetHeight + scrollTop;
     const threshold = this.thrPx || (offsetHeight * this.thrPc);
+    if (scrollPos + threshold >= scrollHeight) {
+      if (!this.didFire) {
+        this.didFire = true;
+        this.onInfiniteScroll.emit();
+      }
+    } else {
+      if (this.didFire) {
+        this.didFire = false;
+      }
+    }
   }
 }

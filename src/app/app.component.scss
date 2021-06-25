@@ -1,0 +1,14 @@
+.wrapper {
+  background-color: #ddd;
+  height: 400px;
+  padding: 8px;
+  overflow-y: scroll;
+}
+
+.item {
+  border: 1px solid black;
+  border-radius: 6px;
+  margin: 4px;
+  text-align: center;
+  height: 40px;
+}
