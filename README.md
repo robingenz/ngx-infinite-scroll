@@ -21,7 +21,7 @@ npm install @robingenz/ngx-infinite-scroll
 
 ## Example
 
-🚧 WIP
+A working example can be found [here](https://stackblitz.com/github/robingenz/ngx-infinite-scroll).
 
 ## Changelog
 
