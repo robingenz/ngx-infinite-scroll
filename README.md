@@ -1,8 +1,9 @@
 # ngx-infinite-scroll
 
-📜 Angular directive for infinite scrolling. 
+[![npm (version)](https://img.shields.io/npm/v/@robingenz/ngx-infinite-scroll)](https://www.npmjs.com/package/@robingenz/ngx-infinite-scroll)
+[![npm (downloads)](https://img.shields.io/npm/dw/@robingenz/ngx-infinite-scroll)](https://www.npmjs.com/package/@robingenz/ngx-infinite-scroll)
 
-[![npm](https://img.shields.io/npm/v/@robingenz/ngx-infinite-scroll)](https://www.npmjs.com/package/@robingenz/ngx-infinite-scroll)
+📜 Angular directive for infinite scrolling. 
 
 ## Installation
 
