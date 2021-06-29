@@ -2,6 +2,8 @@
 
 📜 Angular directive for infinite scrolling. 
 
+[![npm](https://img.shields.io/npm/v/@robingenz/ngx-infinite-scroll)](https://www.npmjs.com/package/@robingenz/ngx-infinite-scroll)
+
 ## Installation
 
 ```bash
