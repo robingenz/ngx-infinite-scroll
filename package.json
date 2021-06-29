@@ -49,7 +49,11 @@
   },
   "prettier": "@robingenz/prettier-config",
   "standard-version": {
-    "packageFiles": ["projects/robingenz/ngx-infinite-scroll/package.json"],
-    "bumpFiles": ["projects/robingenz/ngx-infinite-scroll/package.json"]
+    "packageFiles": [
+      "projects/robingenz/ngx-infinite-scroll/package.json"
+    ],
+    "bumpFiles": [
+      "projects/robingenz/ngx-infinite-scroll/package.json"
+    ]
   }
 }
