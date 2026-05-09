@@ -1,0 +1,27 @@
+<main>
+  <h1>ngx-infinite-scroll demo</h1>
+
+  <section class="controls">
+    <div class="stats">
+      <span><strong>Items:</strong> {{ items().length }}</span>
+      <span><strong>onInfiniteScroll fired:</strong> {{ fireCount() }}</span>
+      <span><strong>Disabled:</strong> {{ disabled() ? 'yes' : 'no' }}</span>
+    </div>
+    <div class="actions">
+      <button type="button" (click)="toggleDisabled()">Toggle disabled</button>
+      <button type="button" (click)="reset()">Reset</button>
+    </div>
+  </section>
+
+  <ul
+    class="scroll-container"
+    infiniteScroll
+    infiniteScrollThreshold="200px"
+    [infiniteScrollDisabled]="disabled()"
+    (onInfiniteScroll)="onInfiniteScroll()"
+  >
+    @for (item of items(); track item) {
+    <li>Item {{ item }}</li>
+    }
+  </ul>
+</main>
