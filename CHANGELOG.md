@@ -2,6 +2,30 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [21.0.0](https://github.com/robingenz/ngx-infinite-scroll/compare/v13.0.0...v21.0.0) (2026-05-09)
+
+
+### ⚠ BREAKING CHANGES
+
+* library peer deps now require `@angular/common` and
+`@angular/core` >=21.0.0. Library version bumped 13.0.0 -> 21.0.0.
+
+* setup app for testing
+
+* chore: add CI workflow and wire directive into dev app
+
+- Add `.github/workflows/ci.yml` with build (library + workspace + tests)
+  and lint (Prettier check) jobs
+- Replace `prettier` script with `fmt` (write) and `lint` (check)
+- Add `.prettierignore` for build artifacts and generated caches
+- Wire `InfiniteScrollDirective` into the dev app with a scrollable
+  demo list, fire counter, and disable toggle
+- Format remaining scaffold files to satisfy the new lint check
+
+### Features
+
+* upgrade to Angular 21 ([#22](https://github.com/robingenz/ngx-infinite-scroll/issues/22)) ([67bdef6](https://github.com/robingenz/ngx-infinite-scroll/commit/67bdef6248a158973d80634f19aecf197378054b))
+
 ## [13.0.0](https://github.com/robingenz/ngx-infinite-scroll/compare/v12.1.0...v13.0.0) (2021-12-20)
 
 
