@@ -9,7 +9,8 @@
     "test": "ng test",
     "test:lib": "ng test @robingenz/ngx-infinite-scroll",
     "watch": "ng build --watch --configuration development",
-    "prettier": "prettier \"**/*.{css,html,ts,js,java}\"",
+    "fmt": "prettier --write \"**/*.{css,html,ts,js,java}\"",
+    "lint": "prettier --check \"**/*.{css,html,ts,js,java}\"",
     "clean": "rimraf ./dist",
     "release:lib": "cd projects/robingenz/ngx-infinite-scroll && standard-version --infile ../../../CHANGELOG.md"
   },

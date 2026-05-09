@@ -13,15 +13,15 @@ export class App {
   protected readonly disabled = signal(false);
 
   protected onInfiniteScroll(): void {
-    this.fireCount.update((n) => n + 1);
-    this.items.update((current) => {
+    this.fireCount.update(n => n + 1);
+    this.items.update(current => {
       const next = current.length;
       return [...current, ...Array.from({ length: 20 }, (_, i) => next + i + 1)];
     });
   }
 
   protected toggleDisabled(): void {
-    this.disabled.update((d) => !d);
+    this.disabled.update(d => !d);
   }
 
   protected reset(): void {
