@@ -1,5 +1,12 @@
 # Changelog
 
+## [21.0.2](https://github.com/robingenz/ngx-infinite-scroll/compare/v21.0.1...v21.0.2) (2026-10-19)
+
+
+### Miscellaneous Chores
+
+* add publishConfig to library package ([5e41e82](https://github.com/robingenz/ngx-infinite-scroll/commit/5e41e82dfdb7609b2757b512c739cc03d80e7a70))
+
 ## [21.0.0](https://github.com/robingenz/ngx-infinite-scroll/compare/v13.0.0...v21.0.0) (2026-05-09)
 
 
