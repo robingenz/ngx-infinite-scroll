@@ -1,7 +1,5 @@
 # Changelog
 
-All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
-
 ## [21.0.0](https://github.com/robingenz/ngx-infinite-scroll/compare/v13.0.0...v21.0.0) (2026-05-09)
 
 

@@ -1,6 +1,6 @@
 {
   "name": "@robingenz/ngx-infinite-scroll",
-  "version": "21.0.0",
+  "version": "21.0.1",
   "description": "Angular directive for infinite scrolling.",
   "author": "Robin Genz <mail@robingenz.dev>",
   "keywords": [
